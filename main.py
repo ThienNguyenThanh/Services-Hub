@@ -1,7 +1,9 @@
 import json
 
+import nltk
 import spacy
-from nltk.corpus import wordnet
+from nltk.corpus import verbnet, wordnet
+from nltk.wsd import lesk
 
 nlp = spacy.load("en_core_web_lg")
 
@@ -43,9 +45,10 @@ def search_synonym(search_querry: str) -> list:
 
 
 if __name__ == "__main__":
-    syns = search_synonym("travel Dallas, eat fried chicken")
-    print(syns)
-    
+    # syns = search_synonym("travel")
+    # print(syns)
    
+    print(lesk(['I','love','you'], 'loves'))
+    # print(wordnet.synset('dallas.n.01').definition())
 
 

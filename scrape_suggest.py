@@ -3,10 +3,12 @@
 import concurrent.futures
 import itertools
 import json
+import ssl
 import string
 import time
 from datetime import date, datetime
 
+import nltk
 import pandas as pd
 import requests
 from jmespath import search
@@ -127,22 +129,22 @@ LANGUAGE = "vn"
 COUNTRY="VN"
 # Keyword_seed csv file name. One column csv file.
 #csv_fileName="keyword_seeds.csv"
-CSV_FILE_NAME="keywords.csv"
+# CSV_FILE_NAME="keywords.csv"
 # autocomplete(CSV_FILE_NAME)
 #The result will save in keyword_suggestions.csv csv file
 
-cus_search = 'pizza'
+cus_search = 'travel Dallas'
 # print(getGoogleSuggests(cus_search))
 
 from bs4 import BeautifulSoup
 
-page = requests.get('https://www.thesaurus.com/browse/trip')
+# page = requests.get('https://www.thesaurus.com/browse/trip')
 
-soup = BeautifulSoup(page.content, "html.parser")
-# print(soup.find_all('a'))
+# soup = BeautifulSoup(page.content, "html.parser")
 
-diffent_types_bar = soup.find('div', attrs={'class':'postab-container css-cthfds ew5makj3'})
-diffent_synonyms = soup.find_all('div', attrs={'class':'css-ixatld e15rdun50'})
+
+# diffent_types_bar = soup.find('div', attrs={'class':'postab-container css-cthfds ew5makj3'})
+# diffent_synonyms = soup.find_all('div', attrs={'class':'css-ixatld e15rdun50'})
 
 {
     'word': 'trip',
@@ -172,13 +174,13 @@ diffent_synonyms = soup.find_all('div', attrs={'class':'css-ixatld e15rdun50'})
     #         synonyms.append(each_syn)
 
 
-import ssl
 
-# try:
-# _create_unverified_https_context = ssl._create_unverified_context
-# except AttributeError:
-#     pass
-# else:
-#     ssl._create_default_https_context = _create_unverified_https_context
-# nltk.download('wordnet')
+
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+nltk.download('verbnet')
 # nltk.download('omw-1.4')

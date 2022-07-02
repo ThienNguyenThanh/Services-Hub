@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ThienNguyenThanh/Services-Hub#readme",
   "dependencies": {
+    "@tiki.vn/tini-f2": "^0.2.0",
     "script": "^0.1.4"
   }
 }

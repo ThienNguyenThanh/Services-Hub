@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/Homepage/index",
+    "pages/index/index",
+    "pages/resultPage/index"
+  ],
+  "window": {
+    "defaultTitle": "ServHub",
+    "backgroundColor": "#50A6F8",
+    "titleBarColor": "#50A6F8"
+  }
+}

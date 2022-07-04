@@ -1,27 +1,11 @@
 {
-  "name": "services-hub",
-  "version": "1.0.0",
-  "description": "Tini UI",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo Error: no test specified && exit 1"
+  "name": "serv-hub",
+  "version": "0.1.0",
+  "tiki": {
+    "appIdentifier": "vn.tiki.miniapp.ServHub",
+    "buildNumber": 1
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThienNguyenThanh/Services-Hub.git"
-  },
-  "keywords": [
-    "test",
-    "ui"
-  ],
-  "author": "KhoiNguyen-281 s3759804@rmit.edu.vn",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ThienNguyenThanh/Services-Hub/issues"
-  },
-  "homepage": "https://github.com/ThienNguyenThanh/Services-Hub#readme",
   "dependencies": {
-    "@tiki.vn/tini-f2": "^0.2.0",
-    "script": "^0.1.4"
+    "@tiki.vn/tini-ui": "^0.12.0"
   }
 }

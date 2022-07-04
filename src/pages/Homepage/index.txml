@@ -1,0 +1,12 @@
+
+  
+<view class="main-container">
+  <view class="header-container">
+    <image src="../image/Logo.png" class= "logo"></image>
+    <search-bar class= "search-bar"
+      placeholder="Click to type here"
+      shape="pill"></search-bar>
+  </view>
+  <view class="body-container"></view>
+  <view class="footer-container"></view>
+</view>

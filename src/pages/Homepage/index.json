@@ -1,6 +1,6 @@
 {
-  "defaultTitle": "Search bar",
+  "defaultTitle": "ServHUB",
   "usingComponents": {
-    "search-bar": "@tiki.vn/tini-ui/es/search-bar/index"
+    "homepage-header": "/homepage-header/index"
   }
 }

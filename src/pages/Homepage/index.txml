@@ -1,12 +1,20 @@
+ 
 
-  
 <view class="main-container">
-  <view class="header-container">
+  <!-- <view class="header-container">
     <image src="../image/Logo.png" class= "logo"></image>
     <search-bar class= "search-bar"
-      placeholder="Click to type here"
-      shape="pill"></search-bar>
+      placeholder="Nhập từ khóa"
+      shape="pill"></search-bar> -->
+  <!-- </view> -->
+  <homepage-header></homepage-header>
+  <view class="body-container">
+    <view class="popular-apps">
+        <view class="category-header">
+          <view class="category-title"></view>
+          <view class="see-more"></view> 
+        </view>
+    </view>
   </view>
-  <view class="body-container"></view>
   <view class="footer-container"></view>
 </view>

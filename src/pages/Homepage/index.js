@@ -1,5 +1,13 @@
 Page({
-	onLoad(query) {
+  data: {
+    categoryApps: [],
+    apps: {
+      title: '',
+      icon: '',
+      url: ''
+    }
+  },
+	onLoad() {
 	},
 	onReady() {
 	},

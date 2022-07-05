@@ -1,0 +1,6 @@
+<view class="header-container">
+  <image src="../image/Logo.png" class= "logo"></image>
+  <search-bar class= "search-bar"
+  placeholder="Nhập từ khóa"
+  shape="pill"></search-bar>
+</view>

@@ -9,20 +9,6 @@
   text-align: center;
 }
 
-.logo {
-  margin: 30% 0 5% ;
-  width: 35%;
-  height: 20%;
-}
-
-.search-bar {
-  margin: auto;
-  width: 80%;
-  background-color: white;
-  border-radius: 25px;
-  text-align: left;
-}
-
 .body-container {
   background-color: white;
   border-radius: 5px;

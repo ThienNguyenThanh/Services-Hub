@@ -1,1 +1,7 @@
-{}
+{
+  "defaultTitle": "Result page",
+  "usingComponents": {
+    "search-bar": "@tiki.vn/tini-ui/es/search-bar/index",
+    "homepage-header": "../homepage/homepage-header/index"
+  }
+}

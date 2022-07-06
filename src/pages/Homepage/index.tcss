@@ -8,15 +8,15 @@
   height: 40%;
   text-align: center;
 }
-.logo {
-  margin: 30% 0 5% ;
-  width: 35%;
-  height: 20%;
+
+.body-container{
+  height: 100%;
 }
-.search-bar {
-  margin: auto;
-  width: 80%;
+.popular-apps{
+  border-radius: 8px;
   background-color: white;
-  border-radius: 25px;
-  text-align: left;
+  height: 50%;
+}
+.category-header {
+  height: 12%;
 }

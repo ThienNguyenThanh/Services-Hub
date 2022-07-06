@@ -1,0 +1,12 @@
+.category-apps-icon{
+  width:48px;
+  height: 48px;
+  border-radius: 16px;
+  background-color: grey;
+  margin-bottom: 8px;
+}
+.category-apps-title {
+  width:fit-content;
+  height: 10%;
+  font-size: 14px;
+}

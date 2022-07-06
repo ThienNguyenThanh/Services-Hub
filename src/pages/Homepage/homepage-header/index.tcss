@@ -1,10 +1,12 @@
 .logo {
-  margin: 30% 0 5% ;
+  box-sizing: border-box;
+  margin: 5%;
   width: 35%;
   height: 20%;
 }
 .search-bar {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
   width: 80%;
   background-color: white;
   border-radius: 25px;

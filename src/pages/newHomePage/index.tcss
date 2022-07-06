@@ -1,0 +1,51 @@
+.main-container {
+  margin: auto;
+  width: 95%;
+  height: 100vh;
+}
+
+.header-container {
+  height: 40%;
+  text-align: center;
+}
+
+.logo {
+  margin: 30% 0 5% ;
+  width: 35%;
+  height: 20%;
+}
+
+.search-bar {
+  margin: auto;
+  width: 80%;
+  background-color: white;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.body-container {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.body-container .header .title {
+  font-weight: bold;
+  position: relative;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.body-container .header .more {
+  color: #1A94FF;
+  position: relative;
+  right: 10px;
+  padding: 10px;
+  font-size: smaller;
+}
+
+.app-img {
+  margin: 30% 0 5% ;
+  width: 35%;
+  height: 20%;
+}
+

@@ -1,0 +1,23 @@
+<view class="main-container">
+  <view class="header-container">
+    <image src="../image/Logo.png" class="logo"></image>
+    <search-bar class = "search-bar" placeholder = "Nhấn vào để tìm kiếm" shape = "pill"></search-bar>
+  </view>
+
+  <view class="body-container">
+    <view class="popular-container">
+      <view class="header">
+        <text class = "title">Phổ biến</text>
+        <text class = "more">Xem thêm</text>
+      </view>
+
+      <view class="body">
+        <image src="../image/dien.png" ></image>
+        <text>App name here</text>
+      </view>
+      
+    </view>
+  </view>
+
+  <view class="footer-container"></view>
+</view>

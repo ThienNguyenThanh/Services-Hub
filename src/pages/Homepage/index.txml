@@ -6,6 +6,8 @@
   
   <view class="body-container">
     <popular-apps></popular-apps>
+    <popular-apps></popular-apps>
+    <popular-apps></popular-apps>
   </view>
   <view class="footer-container"></view>
 </view>

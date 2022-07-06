@@ -1,6 +1,20 @@
 <view class="popular-apps">
   <view class="category-header">
     <text class="category-title">{{category}}</text>
-    <button class="see-more">xem thêm</button>
+    <text class="see-more">Xem thêm</text>
+  </view>
+  <view class="category-body">
+    <view class="category-apps-container">
+      <app-mini></app-mini>
+    </view>
+    <view class="category-apps-container">
+      <app-mini></app-mini>
+    </view>
+    <view class="category-apps-container">
+      <app-mini></app-mini>
+    </view>
+    <view class="category-apps-container">
+      <app-mini></app-mini>
+    </view>
   </view>
 </view>

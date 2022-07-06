@@ -2,7 +2,8 @@
   "component": true,
   "usingComponents": {
     "text": "@tiki.vn/tini-ui/es/text",
-    "button": "@tiki.vn/tini-ui/es/tu-button/index"
+    "button": "@tiki.vn/tini-ui/es/tu-button/index",
+    "app-mini": "../app-mini/index"
   },
   "componentLifeCycleV2": "YES"
 }

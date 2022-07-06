@@ -1,7 +1,6 @@
 .popular-apps {
   border-radius: 8px;
-  background-color: white;
-  height: 50%;
+  margin: 4px 0 4px
 }
 .category-header {
   padding-top: 2%;
@@ -22,6 +21,15 @@
   background-color: white;
   border-color: white;
 }
-.see-more :no-button {
-  
+.category-body{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.category-apps-container{
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    
 }

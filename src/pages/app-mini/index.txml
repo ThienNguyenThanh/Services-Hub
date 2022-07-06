@@ -1,0 +1,2 @@
+<view class="category-apps-icon"></view>
+<view class="category-apps-title">{{title}}</view>

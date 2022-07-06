@@ -2,7 +2,8 @@
   "pages": [
     "pages/Homepage/index",
     "pages/index/index",
-    "pages/resultPage/index"
+    "pages/resultPage/index",
+    "pages/popular-apps-page/index"
   ],
   "window": {
     "defaultTitle": "ServHub",

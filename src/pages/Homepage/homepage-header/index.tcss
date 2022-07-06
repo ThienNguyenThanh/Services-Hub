@@ -1,32 +1,12 @@
-.header-container {
-  height: 40%;
-  text-align: center;
-}
 .logo {
   margin: 30% 0 5% ;
   width: 35%;
   height: 20%;
 }
 .search-bar {
-/* 
-  display: flex;
-  flex-direction: column;
-  align-self: start;
-   */
   margin: auto;
   width: 80%;
   background-color: white;
   border-radius: 25px;
   text-align: left;
-}
-.body-container{
-  height: 100%;
-}
-.popular-apps{
-  border-radius: 8px;
-  background-color: white;
-  height: 50%;
-}
-.category-header {
-  height: 12%;
 }

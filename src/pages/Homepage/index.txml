@@ -1,20 +1,11 @@
  
-
 <view class="main-container">
-  <!-- <view class="header-container">
-    <image src="../image/Logo.png" class= "logo"></image>
-    <search-bar class= "search-bar"
-      placeholder="Nhập từ khóa"
-      shape="pill"></search-bar> -->
-  <!-- </view> -->
-  <homepage-header></homepage-header>
+  <view class="header-container">
+    <homepage-header></homepage-header>
+  </view>
+  
   <view class="body-container">
-    <view class="popular-apps">
-        <view class="category-header">
-          <view class="category-title"></view>
-          <view class="see-more"></view> 
-        </view>
-    </view>
+    <popular-apps></popular-apps>
   </view>
   <view class="footer-container"></view>
 </view>

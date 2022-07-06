@@ -1,6 +1,7 @@
 {
   "defaultTitle": "ServHUB",
   "usingComponents": {
-    "homepage-header": "/homepage-header/index"
+    "homepage-header": "/homepage-header/index",
+    "popular-apps": "/popular-apps/index"
   }
 }

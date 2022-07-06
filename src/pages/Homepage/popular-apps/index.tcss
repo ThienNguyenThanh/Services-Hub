@@ -1,0 +1,27 @@
+.popular-apps {
+  border-radius: 8px;
+  background-color: white;
+  height: 50%;
+}
+.category-header {
+  padding-top: 2%;
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+.category-title {
+  font-size: 16px;
+  color: 747474;
+}
+.see-more {
+  text-align: end;
+  font-size: 14px;
+  color: #1A94FF;
+  background-color: white;
+  border-color: white;
+}
+.see-more :no-button {
+  
+}

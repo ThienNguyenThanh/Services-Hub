@@ -2,7 +2,7 @@
 
 Component({
 	data: {
-    categoryList: ['Phổ biến', 'Lịch sử', 'Yêu thích'],
+    categoryList: ['Phổ biến', 'Lịch sử', 'Yêu thích', 'text'],
     category: '',
     apps: {
       url: '',

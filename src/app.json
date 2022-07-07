@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/resultPage/index",
-    "pages/apps-pages/popular-page/index",
     "pages/Homepage/index",
+    
+    "pages/apps-pages/popular-page/index",
+    
     
       
     "pages/apps-pages/favorite-pages/index",

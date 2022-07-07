@@ -6,16 +6,7 @@
     </view>
   </view>
   <view class="category-body">
-    <view class="category-apps-container">
-      <app-mini></app-mini>
-    </view>
-    <view class="category-apps-container">
-      <app-mini></app-mini>
-    </view>
-    <view class="category-apps-container">
-      <app-mini></app-mini>
-    </view>
-    <view class="category-apps-container">
+    <view tiki:for={{[1, 2, 3, 4]}} class="category-apps-container">
       <app-mini></app-mini>
     </view>
   </view>

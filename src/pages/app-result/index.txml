@@ -1,0 +1,7 @@
+<view class="category-items">
+  <view class="item-icon">{{icon}}</view>
+  <view class="item-text">
+    <view class="item-title">{{title}}</view>
+    <view class="item-des">{{description}}</view>
+  </view>
+</view>

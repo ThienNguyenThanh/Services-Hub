@@ -1,7 +1,9 @@
-<view class="popular-apps">
+<view class="homepage-apps">
   <view class="category-header">
     <text class="category-title">{{category}}</text>
-    <text class="see-more">Xem thêm</text>
+    <view class="see-more" onTap="_onTapActionButton">
+      <text >{{action}}</text>
+    </view>
   </view>
   <view class="category-body">
     <view class="category-apps-container">

@@ -1,9 +1,13 @@
 {
   "pages": [
-    "pages/Homepage/index",
-    "pages/index/index",
     "pages/resultPage/index",
-    "pages/popular-apps-page/index"
+    "pages/apps-pages/popular-page/index",
+    "pages/Homepage/index",
+    
+      
+    "pages/apps-pages/favorite-pages/index",
+    "pages/apps-pages/history-pages/index",
+    "pages/index/index"
   ],
   "window": {
     "defaultTitle": "ServHub",

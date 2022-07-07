@@ -5,9 +5,9 @@
   </view>
   
   <view class="body-container">
-    <popular-apps></popular-apps>
-    <popular-apps></popular-apps>
-    <popular-apps></popular-apps>
+    <homepage-apps></homepage-apps>
+    <homepage-apps></homepage-apps>
+    <homepage-apps></homepage-apps>
   </view>
   <view class="footer-container"></view>
 </view>

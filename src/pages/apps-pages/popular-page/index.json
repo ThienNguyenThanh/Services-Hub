@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "Phổ biến",
+  "usingComponents": {
+    "app-mini": "../app-mini/index"
+  }
+}

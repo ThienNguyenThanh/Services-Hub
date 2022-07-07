@@ -1,6 +1,7 @@
-.popular-apps {
+.homepage-apps {
   border-radius: 8px;
-  margin: 4px 0 4px
+  margin: 4px 0 4px;
+  background-color: white;
 }
 .category-header {
   padding-top: 2%;
@@ -18,8 +19,7 @@
   text-align: end;
   font-size: 14px;
   color: #1A94FF;
-  background-color: white;
-  border-color: white;
+  height: 100%;
 }
 .category-body{
   display: grid;

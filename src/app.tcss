@@ -1,4 +1,7 @@
 .page {
   background-color:#50A6F8;
 }
+:root {
+  background-color: #50A6F8;
+}
  

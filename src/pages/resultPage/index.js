@@ -1,6 +1,6 @@
 Page({
   data: {
-    titleList: ["Đặt vé xe khách/máy bay"],
+    titleList: ["Đặt vé xe khách/máy bay", "Khách sạn/nhà nghỉ", "Nhà hàng"],
     title: "",
     // _onTapActionButton: () => {},
 

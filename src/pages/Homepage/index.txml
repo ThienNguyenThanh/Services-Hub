@@ -1,12 +1,12 @@
-<!-- <import from="/homepage-apps/index.js" name="apps"></import> -->
+
 <view class="main-container">
   <view class="header-container">
     <homepage-header></homepage-header>
   </view>
   
   <view  class="body-container">
-
     <homepage-apps></homepage-apps>
+    
   </view>
   <view class="footer-container"></view>
 </view>

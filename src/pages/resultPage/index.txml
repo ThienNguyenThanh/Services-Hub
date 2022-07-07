@@ -2,19 +2,16 @@
 
 <view class="main-container">
   <view class="header-container">
-    <search-bar class="search-bar"></search-bar>
+    <search-bar class= "search-bar"
+    placeholder="Nhập từ khóa"
+    shape="pill">
+</search-bar>
+
   </view>
   <view class="body-container">
-    <view tiki:for={{[1,2,3]}} class="homepage-apps">
-      <view class="category-header">
-        <view class="category-title">{{title}}</view>
-        <view class="see-more">Xem them</view>
-      </view>
-      <view tiki:for={{[1,2,3]}} class="category-body">
         <app-result></app-result>
-        
-      </view>
-    </view>
+        <app-result></app-result>
+        <app-result></app-result>
   </view>
   <view class="footer-container">
 

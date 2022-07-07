@@ -1,0 +1,13 @@
+<view class="homepage-apps">
+  <view class="category-header">
+    <text class="category-title">{{category}}</text>
+    <view class="see-more" onTap="_onTapActionButton">
+      <text >{{action}}</text>
+    </view>
+  </view>
+  <view class="category-body">
+    <view tiki:for={{[1, 2, 3, 4]}} class="category-apps-container">
+      <app-mini></app-mini>
+    </view>
+  </view>
+</view>

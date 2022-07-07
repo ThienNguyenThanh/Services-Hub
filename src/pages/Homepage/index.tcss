@@ -10,17 +10,12 @@
   align-items: center;
   justify-content: center;
   height: 35%;
-  
 }
 
 .body-container{
   height: 100%;
 }
-.popular-apps{
-  border-radius: 8px;
-  background-color: white;
-  height: fit-content;
-}
+
 .category-header {
   height: 12%;
 }

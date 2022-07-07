@@ -5,16 +5,24 @@
 }
 
 .header-container {
-  height: 40%;
-  text-align: center;
+  /* height: 40%;
+  text-align: center; */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
 }
 
 .body-container {
-  background-color: white;
-  border-radius: 5px;
+  /* background-color: white;
+  border-radius: 5px; */
+
+  height: 100%;
 }
 
-.body-container .header .title {
+/* .body-container .header .title {
   font-weight: bold;
   position: relative;
   padding: 10px;
@@ -33,5 +41,17 @@
   margin: 30% 0 5% ;
   width: 35%;
   height: 20%;
+} */
+
+.body-container{
+  height: 100%;
+}
+.popular-apps{
+  border-radius: 8px;
+  background-color: white;
+  height: fit-content;
+}
+.category-header {
+  height: 12%;
 }
 

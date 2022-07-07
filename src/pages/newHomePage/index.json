@@ -2,6 +2,7 @@
   "defaultTitle": "New home page",
   "usingComponents": {
     "search-bar": "@tiki.vn/tini-ui/es/search-bar/index",
-    "homepage-header": "../homepage/homepage-header/index"
+    "homepage-header": "../homepage/homepage-header/index",
+    "popular-apps": "../homepage/popular-apps/index"
   }
 }

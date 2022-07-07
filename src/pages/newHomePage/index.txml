@@ -5,7 +5,7 @@
   </view>
 
   <view class="body-container">
-    <view class="popular-container">
+    <!-- <view class="popular-container">
       <view class="header">
         <text class = "title">Phổ biến</text>
         <text class = "more">Xem thêm</text>
@@ -16,7 +16,9 @@
         <text>App name here</text>
       </view>
       
-    </view>
+    </view> -->
+    <popular-apps></popular-apps>
+
   </view>
 
   <view class="footer-container"></view>

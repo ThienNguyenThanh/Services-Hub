@@ -1,28 +1,19 @@
 import file from "./index.json"
 
 Component({
-	props: {
+  props: {
+    categoryList: [],
+    appList: [],
+    title: '',
     category: '',
-    apps: {
-      title: '',
-      description: '',
-    },
-    loadData: () => {}
+    description: ''
   },
-  
-  didMount() {  
+  didMount() {
     this.setData({
-      category: this.props.loadData(),
+      categoryList: file.data,
     })
-  },
-  methods: {
-    _loadData() {
-      for (i = 0; i < file.data.length; i++){
-        data = file.data[i];
-        category = data.category;
-        // for (j = 0; j < data.apps.length; j++)
-      }
-    },
+    this.props.categoryList = file.data
+    
   }
-
-});
+})
+    

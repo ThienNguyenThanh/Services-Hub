@@ -1,36 +1,31 @@
 {
   "component": true,
-  "data": [
-    {
-      "category": "Di chuyen",
-      "apps": [
-        {
-          "title": "Futa",
-          "description": "xe khach"
-        },
-        {
-          "title": "Thanh buoi",
-          "description": "xe khach"
-        },
-        {
-          "title": "Limousine",
-          "description": "xe khach"
-        }
-      ]
-    },
-    {
-      "category": "Nghi ngoi",
-      "apps": [
-        {
-          "title": "Agoda",
-          "description": "khach san"
-        },
-        {
-          "title": "Booking.com",
-          "description": "Khach san"
-        }
-      ]
+  "usingComponents": {
+    "apps-results": "../apps-results/index"
+  },
+  "data": [{
+    "category": {
+      "name": "Nghi ngoi",
+      "apps": [{
+        "title": "Booking.com",
+        "description": "Khach san"
+      }, {
+        "title": "Booking.com",
+        "description": "Khach san"
+      }]
     }
-  ]
-  
+  },
+  {
+    "category": {
+      "name": "Di chuyen",
+      "apps": [{
+        "title": "Futa",
+        "description": "Xe khach"
+      }, {
+        "title": "Thanh buoi",
+        "description": "Xe khach"
+      }]
+    }
+    
+  }]
 }

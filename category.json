@@ -132,7 +132,7 @@
 
     },
     "shopping": {
-        "cloth": {
+        "clothes": {
                     "description": "Coolmate là giải pháp mua sắm online cả tủ đồ cho nam giới gồm đầy đủ áo thun, quần short, quần lót, tất(vớ), phụ kiện, đồ thể thao. Coolmate cung cấp chính sách 100% khách hàng hài lòng, đổi trả không hỏi lý do trong vòng 60 ngày với chất lượng tốt và giá cả cạnh tranh",
                     "id": "urn:directory:app:140716007697219596",
                     "identifier": "vn.miniapp.coolmate",

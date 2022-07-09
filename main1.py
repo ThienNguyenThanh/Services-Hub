@@ -2,6 +2,8 @@
 import json
 
 import nltk
+
+nltk.data.path.append('/Users/thien/nltk_data/')
 from googletrans import Translator
 from nltk.corpus import wordnet
 from nltk.tokenize import word_tokenize
@@ -16,13 +18,13 @@ def analysis_input(input: str)-> dict:
     translator = Translator()
     translation = translator.translate(input, dest='en')
     en_input = translation.text
-    print(en_input.lower())
+    # print(en_input.lower())
 
     # Tokenize the input
     input_text = word_tokenize(en_input.lower())
     pos_result = nltk.pos_tag(input_text)
 
-    print(pos_result)
+    # print(pos_result)
 
     # doc = nlp(input)
 
@@ -49,7 +51,7 @@ def search_verbs_synonym(search_querry: str) -> list:
     """Return a list of synonyms of each verb in user's input"""
 
     user_input = analysis_input(search_querry)
-    print(f'user input: {user_input["noun"]}')
+
 
     result = []
     # result.append(user_input["noun"])
@@ -59,12 +61,17 @@ def search_verbs_synonym(search_querry: str) -> list:
 
             # Not add existed synonym in verbs_synonyms list
             [verbs_synonyms.append(i.name()) for i in syn.lemmas() if i.name() not in verbs_synonyms]
-        result.append({'verb': verb, 'synonyms': verbs_synonyms, 'noun':user_input["noun"]})
+        result.append({'verb': verb, 'verbs_synonyms': verbs_synonyms, 'noun':user_input["noun"]})
+    if len(user_input["verb"]) == 0:
+        result.append({'noun':user_input["noun"]})
+
     
     return result
 
-def identify_category(list_verbs_syns: list, category_file: json):
+def identify_category(input_result: list, category_file: json):
+
     pass
+
         
 
 
@@ -80,11 +87,14 @@ if __name__ == "__main__":
 
     CATEGORY =  {   
                     "payment": {
-                        "electricity": "electricity",
+                        "electricity": {
+                                            "description": "Thanh toán hoá đơn điện",
+                                            "id": "urn:directory:app:83304571677442071"
+                                        },
                         "water": "water",
                         "loan": "loan",
-                        "phone_card": "phone card",
-                        "phone_data": "phone data"
+                        "phone card": "phone card",
+                        "phone data": "phone data"
                     },
                     "finance": {
                         "investment": "investment",
@@ -94,8 +104,8 @@ if __name__ == "__main__":
                     "cuisine": {
                         "food": "order food"
                     },
-                    "shopping": {
-                        "cloth": "cloth",
+                    "e-commerce": {
+                        "clothes": "id of cloth",
                         "technology": "technology",
                         "pet": "pet"
                     },
@@ -103,91 +113,66 @@ if __name__ == "__main__":
                         "medicine": "medicine"
                     },
                     "insurance": {
-                        "health_insurance": "health insurance",
-                        "car_insurance": "car insurance",
-                        "bike_insurance": "bike insurance"
+                        "health insurance": "health insurance",
+                        "car insurance": "car insurance",
+                        "bike insurance": "bike insurance"
                     },
                     "entertainment": {
                         "movie tickets":"movie ticket"
                     },
                     "travel": {
-                        "plane_ticket": "plane ticket",
-                        "bus ticket": "bus ticket",
-                        "book_hotel": "book hotel",
+                        "plane ticket": {
+                        "description": "Thanh toán hoá đơn điện",
+                        "id": "urn:directory:app:83304571677442071"},
+                        "bus ticket": {
+                        "description": "Thanh toán hoá đơn điện",
+                        "id": "urn:directory:app:83304571677442071"},
+                        "book hotel": {
+                        "description": "Thanh toán hoá đơn điện",
+                        "id": "urn:directory:app:83304571677442071"},
                     }
     }
     
-    result = search_verbs_synonym("mua vé xem phim")
-    print(result)
+    # querry = "mua quần áo"
+    # result = search_verbs_synonym(querry)
 
-    # possible_category = []
+    # if "verb" not in result[0]:
+    #     re_querry = search_verbs_synonym("tôi " + querry)
+    #     used_result = re_querry[0]
+    # else:
+    #     used_result = result[0]
+
+    # print(f'used result: {used_result}')
+    # possible_category = {}
     # for key, value in CATEGORY.items():
-    #     if value in list_nouns:
-    #         possible_category.append(key)
-            
+       
+    #     if 'verb' in used_result and key in used_result['verb']:
+    #         possible_category["key"] = key
+    #     elif 'noun' in used_result:
+    #         for noun in used_result['noun']:
+    #             if possible_category:
+    #                 break
+    #             else:
+    #                 for value in CATEGORY.values():
+    #                     if noun in value and noun not in possible_category:
+                            
+    #                         possible_category["value"] = noun
+                        
+    #             # print(nn)
+    #             # if noun in CATEGORY.values():
 
+    # print(f'poss cate: {possible_category}')    
+
+    # if "key" in possible_category:
+    #     print(CATEGORY[possible_category["key"]])
+    # else:
+    #     for key, value in CATEGORY.items():
+    #         if possible_category["value"] in value:
+    #             print(CATEGORY[key][possible_category["value"]])
+    
     
 
 
-    # list_syn = syns[0]["synonyms"]
-
-    # keys = CATEGORY.keys()
-    # result  = {}
-    # for syn in list_syn:
-    #     if syn in keys:
-    #         result[syn] = CATEGORY[syn]
-    #         break
-    # print(result)
-
-        
-    # for syn in wordnet.synsets("travel"):
-    #     for i in syn.lemmas():
-    #         print(i.name())
-   
-    # print(lesk(['travel','Dallas'], 'travel'))
-    # print(wordnet.synset('travel.v.06').definition())
-
-    # {   
-    #                 "thanh toán": {
-    #                     "điện": "điện",
-    #                     "nước": "nước",
-    #                     "vay": "vay",
-    #                     "điện thoại": "điện thoại",
-    #                     "dữ liệu": "dữ liệu"
-    #                 },
-    #                 "tài chính": {
-    #                     "đầu tư": "đầu tư",
-    #                     "trade": "trade",
-    #                     "vay": "vay"
-    #                 },
-    #                 "ẩm thực": {
-    #                     "món ăn": "đặt món ăn"
-    #                 },
-    #                 "mua sắm": {
-    #                     "quần áo": "quần áo",
-    #                     "điện tử": "điện tử",
-    #                     "thú cưng": "thú cưng"
-    #                 },
-    #                 "y tế": {
-    #                     "thuốc": "thuốc"
-    #                 },
-    #                 "bảo hiểm": {
-    #                     "sức khoẻ": "sức khoẻ",
-    #                     "ô tô": "ô tô",
-    #                     "xe máy": "xe máy"
-    #                 },
-    #                 "giải trí": {
-    #                     "xem phim":"vé xem phim"
-    #                 },
-    #                 "du lịch": {
-    #                     "máy bay": "vé máy bay",
-    #                     "xe khách": "vé xe khách",
-    #                     "khách sạn": "đặt khách sạn",
-    #                 }
-    # }
-
+    wiki = TextBlob("")
     
-
-    # print(category["payment"]["electricity"])
-
 

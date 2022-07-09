@@ -1,14 +1,14 @@
-<view tiki:for-each="{{props.categoryList}}" class="homepage-apps">
+<view tiki:for-each="{{props}}" class="homepage-apps">
   <view  class="category-header">
-    <view class="category-title">{{props.category}}</view>
+    <view class="category-title">{{category}}</view>
     <view class="see-more">Xem them</view>
   </view>
-  <view tiki:for-each="{{props.miniApps}}" class="category-body">
+  <view tiki:for-each="{{miniApp}}" class="category-body">
     <view class="category-items">
       <view class="item-icon">{{icon}}</view>
       <view class="item-text">
-        <view class="item-title">{{props.miniApp.title}}</view>
-        <view class="item-des">{{props.miniApp.description}}</view>
+        <view class="item-title">{{title}}</view>
+        <view class="item-des">{{description}}</view>
       </view>
     </view>
   </view>

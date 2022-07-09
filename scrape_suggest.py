@@ -133,8 +133,8 @@ COUNTRY="VN"
 # autocomplete(CSV_FILE_NAME)
 #The result will save in keyword_suggestions.csv csv file
 
-cus_search = 'travel Dallas'
-# print(getGoogleSuggests(cus_search))
+cus_search = 'đi đà lạt mặc gì'
+print(makeGoogleRequest(cus_search))
 
 from bs4 import BeautifulSoup
 
@@ -182,5 +182,5 @@ except AttributeError:
     pass
 else:
     ssl._create_default_https_context = _create_unverified_https_context
-nltk.download('verbnet')
+# nltk.download('verbnet')
 # nltk.download('omw-1.4')

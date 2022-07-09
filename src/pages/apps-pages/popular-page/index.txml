@@ -1,3 +1,15 @@
 <view class="main-container">
-  <view class="homepage-apps"></view>
+  
+  <view class="header-container">
+    <search-bar class="search-bar" placeholder="Tìm kiếm"></search-bar>
+  </view>
+
+  <view class="body-container">
+
+    <app-result></app-result>
+  </view>
+
+  <view class="footer-container">
+
+  </view>
 </view>

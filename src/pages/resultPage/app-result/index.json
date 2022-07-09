@@ -3,7 +3,8 @@
   "usingComponents": {
     "apps-results": "../apps-results/index"
   },
-  "data": [{
+  "data": [
+  {
     "categoryName": "Di chuyen",
     "miniApps": [
       {
@@ -16,6 +17,7 @@
       }
     ] 
   },
+
   {
     "categoryName": "An uong",
     "miniApps": [
@@ -29,5 +31,6 @@
       }
     ] 
   }
+
   ]
 }

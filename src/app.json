@@ -1,10 +1,13 @@
 {
   "pages": [
     
-    "pages/newHomePage/index",
-    "pages/resultPage/index",
-    "pages/Homepage/index",
     "pages/apps-pages/popular-page/index",
+    "pages/newHomePage/index",
+    "pages/seeMorePage/index",
+    "pages/resultPage/index",
+    
+    "pages/Homepage/index",
+    
     "pages/apps-pages/favorite-pages/index",
     "pages/apps-pages/history-pages/index",
     "pages/index/index"

@@ -1,6 +1,7 @@
 {
   "defaultTitle": "Phổ biến",
   "usingComponents": {
-    "app-mini": "../app-mini/index"
+    "search-bar": "@tiki.vn/tini-ui//es/search-bar/index",
+    "app-result": "../../resultPage/app-result/index"
   }
 }

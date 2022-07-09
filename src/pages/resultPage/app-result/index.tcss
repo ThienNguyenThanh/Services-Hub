@@ -5,7 +5,7 @@
 
 .category-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 16px 20px;
 }
 .category-items {

@@ -1,16 +1,14 @@
 
-
 <view class="main-container">
   <view class="header-container">
     <search-bar class= "search-bar"
     placeholder="Nhập từ khóa"
     shape="pill">
-</search-bar>
-
+  </search-bar>
   </view>
   <view class="body-container">
     <app-result></app-result>
-  
+    <app-result></app-result>
   </view>
   <view class="footer-container">
 

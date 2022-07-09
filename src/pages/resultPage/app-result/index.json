@@ -4,28 +4,30 @@
     "apps-results": "../apps-results/index"
   },
   "data": [{
-    "category": {
-      "name": "Nghi ngoi",
-      "apps": [{
-        "title": "Booking.com",
-        "description": "Khach san"
-      }, {
-        "title": "Booking.com",
-        "description": "Khach san"
-      }]
-    }
+    "category": "Di chuyen",
+    "miniApps": [
+      {
+        "title": "Futa",
+        "description": "Xe"
+      }, 
+      {
+        "title": "Honda",
+        "description": "Xe"
+      }
+    ] 
   },
   {
-    "category": {
-      "name": "Di chuyen",
-      "apps": [{
-        "title": "Futa",
-        "description": "Xe khach"
-      }, {
-        "title": "Thanh buoi",
-        "description": "Xe khach"
-      }]
-    }
-    
-  }]
+    "category": "An uong",
+    "miniApps": [
+      {
+        "title": "Agoda",
+        "description": "An"
+      }, 
+      {
+        "title": "King",
+        "description": "An"
+      }
+    ] 
+  }
+  ]
 }

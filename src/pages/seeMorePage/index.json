@@ -2,6 +2,6 @@
   "usingComponents": {
     "search-bar": "@tiki.vn/tini-ui//es/search-bar/index",
     
-    "app-result": "../app-result/index"
+    "app-result": "../resultPage/app-result/index"
   }
 }

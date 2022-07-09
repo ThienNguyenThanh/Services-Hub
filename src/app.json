@@ -1,9 +1,9 @@
 {
   "pages": [
-    
+    "pages/seeMorePage/index",
     "pages/apps-pages/popular-page/index",
     "pages/newHomePage/index",
-    "pages/seeMorePage/index",
+    
     "pages/resultPage/index",
     
     "pages/Homepage/index",

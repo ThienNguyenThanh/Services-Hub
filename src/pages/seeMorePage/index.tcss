@@ -3,12 +3,18 @@
 @import "../Homepage/homepage-apps/index.tcss";
 
 .search-bar{
-  margin-bottom: 7%;
-  border-style: none;
+  margin-bottom: 7%
 }
 .header-container {
   height: fit-content;
 }
+
+.header-container .title {
+  font-size: 26px;
+  font-weight: bold;
+  color:white;
+}
+
 .homepage-apps {
   margin-top: 3%;
 }
@@ -47,3 +53,9 @@
   border: 1px solid black;
 }
 
+.see-more-footer {
+  padding-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  color: #50A6F8;
+}

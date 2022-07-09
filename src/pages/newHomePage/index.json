@@ -3,6 +3,8 @@
   "usingComponents": {
     "search-bar": "@tiki.vn/tini-ui/es/search-bar/index",
     "homepage-header": "../homepage/homepage-header/index",
-    "popular-apps": "../homepage/popular-apps/index"
+    "popular-apps": "../homepage/popular-apps/index",
+    "homepage-apps": "../homepage/homepage-apps/index",
+    "app-mini": "../app-mini/index"
   }
 }

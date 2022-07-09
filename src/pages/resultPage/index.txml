@@ -1,21 +1,21 @@
-
-
 <view class="main-container">
+  
   <view class="header-container">
-    <search-bar class="search-bar"></search-bar>
+    <search-bar class="search-bar" placeholder="Đi đà lạt"></search-bar>
   </view>
+
   <view class="body-container">
     <view tiki:for={{[1,2,3]}} class="homepage-apps">
       <view class="category-header">
         <view class="category-title">{{title}}</view>
-        <view class="see-more">Xem them</view>
+        <view class="see-more">{{seeMore}}</view>
       </view>
       <view tiki:for={{[1,2,3]}} class="category-body">
         <app-result></app-result>
-        
       </view>
     </view>
   </view>
+
   <view class="footer-container">
 
   </view>

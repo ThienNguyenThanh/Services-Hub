@@ -5,20 +5,18 @@
   </view>
 
   <view class="body-container">
-    <!-- <view class="popular-container">
-      <view class="header">
-        <text class = "title">Phổ biến</text>
-        <text class = "more">Xem thêm</text>
+    <view class="category-header">
+      <text class="category-title">{{category}}</text>
+      <view class="see-more" onTap="_onTapActionButton">
+        <text>{{seeMore}}</text>
       </view>
+    </view>
 
-      <view class="body">
-        <image src="../image/dien.png" ></image>
-        <text>App name here</text>
+    <view class="category-body">
+      <view tiki:for={{[1, 2, 3, 4, 5, 6, 7, 8]}} class="category-apps-container">
+        <app-mini></app-mini>
       </view>
-      
-    </view> -->
-    <popular-apps></popular-apps>
-
+    </view>
   </view>
 
   <view class="footer-container"></view>

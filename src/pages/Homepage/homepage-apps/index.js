@@ -11,6 +11,7 @@ Component({
     onTapActionButton: () => {},
     navigateTo: () => {},
   },
+  
   methods: {
     didMount() {
       this.setData({

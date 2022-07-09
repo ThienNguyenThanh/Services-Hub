@@ -3,7 +3,8 @@ Page({
     titleList: ["Đặt vé xe khách/máy bay"],
     title: "",
     // _onTapActionButton: () => {},
-    seeMore: 'Xem thêm',
+    seeMore: 'Hiện thêm kết quả',
+
   },
 	onLoad() {
     this.setData({

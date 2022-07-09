@@ -1,0 +1,18 @@
+<view tiki:for="{{list}}" class="homepage-apps">
+  <view class="category-header">
+    <view class="category-title">{{item.categoryName}}</view>
+    <!-- <view class="category-title">{{category.miniApps.length}}</view> -->
+    <view class="see-more">Xem them</view>
+  </view>
+  <view tiki:for="{{item.miniApps}}" class="category-body">
+    <view class="category-items">
+      <view class="item-icon">{{icon}}</view>
+      <view class="item-text">
+        <view class="item-title">{{item.title}}</view>
+        <view class="item-des">{{item.description}}</view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

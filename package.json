@@ -1,8 +1,8 @@
 {
-  "name": "serv-hub",
-  "version": "0.1.0",
+  "name": "ServHub",
+  "version": "0.2.0",
   "tiki": {
-    "appIdentifier": "vn.tiki.miniapp.ServHub",
+    "appIdentifier": "vn.tiki.miniapp.servhubtini",
     "buildNumber": 1
   },
   "dependencies": {

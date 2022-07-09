@@ -4,8 +4,6 @@
     "pages/newHomePage/index",
     "pages/resultPage/index",
     "pages/Homepage/index",
-    "pages/seeMorePage/index",
-    
     "pages/apps-pages/popular-page/index",
     "pages/apps-pages/favorite-pages/index",
     "pages/apps-pages/history-pages/index",

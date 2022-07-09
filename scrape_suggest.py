@@ -124,16 +124,16 @@ def autocomplete(csv_fileName):
 WAIT_TIME = 0.2
 MAX_WORKERS = 20
 # set the autocomplete language
-LANGUAGE = "vn"
+LANGUAGE = "en"
 # set the autocomplete country code - DE, US, TR, GR, etc..
-COUNTRY="VN"
+COUNTRY="EN"
 # Keyword_seed csv file name. One column csv file.
 #csv_fileName="keyword_seeds.csv"
 # CSV_FILE_NAME="keywords.csv"
 # autocomplete(CSV_FILE_NAME)
 #The result will save in keyword_suggestions.csv csv file
 
-cus_search = 'đi đà lạt mặc gì'
+cus_search = 'buy plane ticket'
 print(makeGoogleRequest(cus_search))
 
 from bs4 import BeautifulSoup
@@ -182,5 +182,5 @@ except AttributeError:
     pass
 else:
     ssl._create_default_https_context = _create_unverified_https_context
-# nltk.download('verbnet')
+# nltk.download('averaged_perceptron_tagger')
 # nltk.download('omw-1.4')

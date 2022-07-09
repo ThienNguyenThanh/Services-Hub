@@ -1,55 +1,83 @@
+
 import json
-import time
-from nis import cat
-from sre_constants import CATEGORY
-from unicodedata import category
 
-import spacy
-from attr import s
-from nltk.corpus import verbnet, wordnet
-from nltk.wsd import lesk
+import nltk
+from googletrans import Translator
+from nltk.corpus import wordnet
+from nltk.tokenize import word_tokenize
 
-nlp = spacy.load("en_core_web_lg")
+# from nltk.wsd import lesk
+
+# nlp = spacy.load("en-core-web-lg")
 
 def analysis_input(input: str)-> dict:
     """Extract all verbs, nouns and proper nouns in user's input"""
 
-    # Tokenize the input
-    doc = nlp(input)
+    translator = Translator()
+    translation = translator.translate(input, dest='en')
+    en_input = translation.text
+    print(en_input.lower())
 
-    list_verb = [token.lemma_ for token in doc if token.pos_ == 'VERB']             # Get list of verbs in user's input
-    list_prop_noun = [token.text for token in doc if token.pos_ == 'PROPN']         # Get list of proper nouns in user's input
-    list_noun = [token.text for token in doc if token.pos_ == 'NOUN']               # Get list of nouns in user's input
+    # Tokenize the input
+    input_text = word_tokenize(en_input.lower())
+    pos_result = nltk.pos_tag(input_text)
+
+    print(pos_result)
+
+    # doc = nlp(input)
+
+    # list_verb = [token.lemma_ for token in doc if token.pos_ == 'VERB']             # Get list of verbs in user's input
+    # list_prop_noun = [token.text for token in doc if token.pos_ == 'PROPN']         # Get list of proper nouns in user's input
+    # list_noun = [token.text for token in doc if token.pos_ == 'NOUN']               # Get list of nouns in user's input
+
+    list_verbs, list_nouns = [], []
+    for idx in range(len(pos_result)):
+        if pos_result[idx][1] == 'NN' or pos_result[idx][1] == 'NNS':
+            list_nouns.append(pos_result[idx][0])
+        elif pos_result[idx][1] == 'VB' or pos_result[idx][1] == 'VBP':
+            list_verbs.append(pos_result[idx][0])
 
     out_put = {
-                        'verb': list_verb, 
-                        'proper_noun': list_prop_noun,
-                        'noun': list_noun
+                        'verb': list_verbs,
+                        'noun': list_nouns
     }
 
     return out_put
 
 
-def search_synonym(search_querry: str) -> list:
+def search_verbs_synonym(search_querry: str) -> list:
     """Return a list of synonyms of each verb in user's input"""
 
     user_input = analysis_input(search_querry)
+    print(f'user input: {user_input["noun"]}')
 
     result = []
+    # result.append(user_input["noun"])
     for verb in user_input["verb"]:
         verbs_synonyms = []
-        for syn in wordnet.synsets(verb, pos=wordnet.NOUN):
+        for syn in wordnet.synsets(verb, pos=wordnet.VERB):
 
             # Not add existed synonym in verbs_synonyms list
             [verbs_synonyms.append(i.name()) for i in syn.lemmas() if i.name() not in verbs_synonyms]
-        result.append({'verb': verb, 'synonyms': verbs_synonyms})
-
+        result.append({'verb': verb, 'synonyms': verbs_synonyms, 'noun':user_input["noun"]})
+    
     return result
+
+def identify_category(list_verbs_syns: list, category_file: json):
+    pass
         
 
 
 if __name__ == "__main__":
-    start = time.time()
+    
+    # text = word_tokenize("order pizza")
+    # for i in text:
+    # print(nltk.pos_tag(text))
+    # print(lesk(text, "purchase"))
+
+    
+    
+
     CATEGORY =  {   
                     "payment": {
                         "electricity": "electricity",
@@ -80,7 +108,7 @@ if __name__ == "__main__":
                         "bike_insurance": "bike insurance"
                     },
                     "entertainment": {
-                        "movie_ticket":"movie ticket"
+                        "movie tickets":"movie ticket"
                     },
                     "travel": {
                         "plane_ticket": "plane ticket",
@@ -88,17 +116,29 @@ if __name__ == "__main__":
                         "book_hotel": "book hotel",
                     }
     }
-    syns = search_synonym("travel Dallas")
-    list_syn = syns[0]["synonyms"]
-
-    keys = CATEGORY.keys()
-    result  = {}
-    for syn in list_syn:
-        if syn in keys:
-            result[syn] = CATEGORY[syn]
-            break
+    
+    result = search_verbs_synonym("mua vé xem phim")
     print(result)
-    print(f"Total time: {time.time() - start}")
+
+    # possible_category = []
+    # for key, value in CATEGORY.items():
+    #     if value in list_nouns:
+    #         possible_category.append(key)
+            
+
+    
+
+
+    # list_syn = syns[0]["synonyms"]
+
+    # keys = CATEGORY.keys()
+    # result  = {}
+    # for syn in list_syn:
+    #     if syn in keys:
+    #         result[syn] = CATEGORY[syn]
+    #         break
+    # print(result)
+
         
     # for syn in wordnet.synsets("travel"):
     #     for i in syn.lemmas():

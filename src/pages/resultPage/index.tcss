@@ -4,8 +4,8 @@
 
 .search-bar{
   margin-bottom: 7%;
-  border: none;
 }
+
 .header-container {
   height: fit-content;
 }

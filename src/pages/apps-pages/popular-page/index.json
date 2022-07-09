@@ -1,7 +1,8 @@
 {
   "defaultTitle": "Phổ biến",
   "usingComponents": {
-    "app-mini": "../app-mini/index"
+    "search-bar": "@tiki.vn/tini-ui//es/search-bar/index",
+    "popular-apps": "/popular-apps/index"
   },
     "data": {
         "Tiện ích hàng ngày": {
@@ -385,3 +386,4 @@
         }
     }
 }
+   

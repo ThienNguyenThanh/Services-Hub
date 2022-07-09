@@ -5,8 +5,8 @@
   </view>
   
   <view  class="body-container">
-    <homepage-apps></homepage-apps>
-    
+    <homepage-apps></homepage-apps> 
   </view>
+  
   <view class="footer-container"></view>
 </view>

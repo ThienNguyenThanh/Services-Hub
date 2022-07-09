@@ -1,0 +1,386 @@
+{
+  "componentLifeCycleV2": "YES",
+  "component": true,
+  "usingComponents": {},
+  "data": {
+      "Tiện ích hàng ngày": {
+          "apps": [
+              {
+                  "description": "Thanh toán hoá đơn điện",
+                  "id": "urn:directory:app:83304571677442071",
+                  "identifier": "83304571677442071",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/7c/d3/5d/d6d81bde2b8da3d4d7d691539884b19a.png",
+                  "metadata": {
+                      "badge": "",
+                      "deep_link": "tikivn://billpay/1",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Điện",
+                  "total_unique_user": 0,
+                  "total_used": 32158
+              },
+              {
+                  "description": "Thanh toán hoá đơn nước",
+                  "id": "urn:directory:app:83301987348643851",
+                  "identifier": "83301987348643851",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/63/5f/ca/28a5f795f32641010c78c7f77ab1496e.png",
+                  "metadata": {
+                      "badge": "",
+                      "deep_link": "tikivn://billpay/2",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Nước",
+                  "total_unique_user": 0,
+                  "total_used": 9092
+              },
+              {
+                  "description": "Thanh toán hoá đơn vay tiêu dùng",
+                  "id": "urn:directory:app:83305032413347847",
+                  "identifier": "83305032413347847",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/2c/94/81/b2a77910963ba47dd874dc58eddd14d3.png",
+                  "metadata": {
+                      "badge": "MỚI",
+                      "deep_link": "tikivn://billpay/13",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Vay tiêu dùng",
+                  "total_unique_user": 0,
+                  "total_used": 12563
+              },
+              {
+                  "description": "Nạp tiền điện thoại nhanh trên Tiki",
+                  "id": "urn:directory:app:83306411265622025",
+                  "identifier": "83306411265622025",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/56/be/da/8da52249e33d271633abe91537adf982.png",
+                  "metadata": {
+                      "badge": "",
+                      "deep_link": "tikivn://webview?url=https://tiki.vn/san-pham-so/nap-tien-dien-thoai-tra-truoc?src=top_app_icon",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Nạp tiền điện thoại",
+                  "total_unique_user": 0,
+                  "total_used": 10939
+              },
+              {
+                  "description": "Mua mã thẻ cào điện thoại ngay trên Tiki",
+                  "id": "urn:directory:app:83306156604260363",
+                  "identifier": "83306156604260363",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/a0/51/3c/afd33e22c72f56e7c1a2810e5e56c5ee.png",
+                  "metadata": {
+                      "badge": "-2%",
+                      "deep_link": "tikivn://webview?url=https://tiki.vn/san-pham-so/the-cao-dien-thoai?src=top_app_icon",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Mã thẻ điện thoại",
+                  "total_unique_user": 0,
+                  "total_used": 17069
+              },
+              {
+                  "description": "Mua mã thẻ data 3G/4G trên Tiki",
+                  "id": "urn:directory:app:83306036261290007",
+                  "identifier": "83306036261290007",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/7a/66/8a/a69a341f735c11006e795b4c55d4a2a0.png",
+                  "metadata": {
+                      "badge": "",
+                      "deep_link": "tikivn://webview?url=https://tiki.vn/san-pham-so/the-cao-data?src=top_app_icon",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Mã thẻ data 3G/4G",
+                  "total_unique_user": 0,
+                  "total_used": 956
+              }
+          ]
+
+      },
+      "Tài chính": {
+          "apps": [
+              {
+                  "description": "Đầu tư và tích lũy một cách dễ dàng, tiện lợi",
+                  "id": "urn:directory:app:87318023127433247",
+                  "identifier": "vn.infina.tikiapp",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/3d/00/07/a4385accd2d5de726d6f7b90be1328af.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Infina - Đầu tư & Tích lũy",
+                  "total_unique_user": 46740,
+                  "total_used": 8466
+              },
+              {
+                  "description": "Tiki Exchange là một sàn giao dịch được Tiki lập ra giúp việc trao đổi giữa Astra và Tiki Xu 1 cách dễ dàng. Khách hàng của Tiki có sở hữu Astra sẽ được phép thực hiện việc trao đổi Astra của mình cho khách hàng khác của Tiki tại Tiki App",
+                  "id": "urn:directory:app:117514104318459933",
+                  "identifier": "vn.tiki.miniapp.tikiexchange",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/e1/d8/2a/7a79703396f2653909b9c01df7bcd893.png",
+                  "metadata": {
+                      "badge": "MỚI",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Tiki Exchange",
+                  "total_unique_user": 304827,
+                  "total_used": 4729
+              },
+              {
+                  "description": "Vclick là Chợ Tín dụng minh bạch giúp bạn tìm khoản vay có điều kiện tốt nhất từ các ngân hàng và công ty tài chính. Áp dụng công nghệ 4.0, VClick phối hợp cùng các đối tác cung cấp dịch vụ vay với thủ tục đơn giản, không cần gặp mặt và thời gian phê duyệt giải ngân nhanh nhất.",
+                  "id": "urn:directory:app:144994304950075400",
+                  "identifier": "vn.tiki.miniapp.vclick",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/55/7d/a3/d2550f69cde5fb8bac85020519cb4be4.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Đăng ký vay VClick",
+                  "total_unique_user": 1508,
+                  "total_used": 2478
+              },
+              {
+                  "description": "So sánh các sản phẩm tài chính tốt nhất từ vay tiền online, vay tín chấp đến các gói bảo hiểm, ví điện tử \n✓ Miễn phí 100% \n✓ Nhanh Chóng \n✓ Đơn giản",
+                  "id": "urn:directory:app:174945759349768215",
+                  "identifier": "jeff.vn",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/d0/8f/05/7c0157b65bf9dabcae2bc45728b91291.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Jeff",
+                  "total_unique_user": 172,
+                  "total_used": 321
+              }
+          ]
+      },
+      "Ăn uống": {
+          "apps": [
+              {
+                  "description": "Thèm giao đồ ăn nhanh nhất trên Tiki. Các món ăn, nhà hàng và thực phẩm yêu thích của bạn đã được Thèm chọn lọc và sắp xếp theo từng bộ sưu tập món một cách cá nhân hóa nhất. Hãy để chúng mình xua tan cơn đói của bạn và cảm nhận được cảm giác Thèm đúng chuẩn!",
+                  "id": "urn:directory:app:134273842183995422",
+                  "identifier": "app.ketnoi.miniapp.them",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/f0/eb/97/0a36ffe52044be633341ff5193124b2b.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Thèm - Đặt đồ ăn",
+                  "total_unique_user": 16320,
+                  "total_used": 2828
+              },
+              {
+                  "description": "Xem thực đơn - Chọn món - Đặt hàng giao đến tận nhà tại thương hiệu nhà hàng cao cấp TASTY Kitchen. Theo dõi trạng thái đơn hàng, xem lại lịch sử gọi món, và đặt lại các món yêu thích một cách dễ dàng.",
+                  "id": "urn:directory:app:126771808010567693",
+                  "identifier": "vn.tastykitchen.tastytini",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/19/80/1b/832b0f81b1966c4545269842f76c9967.png",
+                  "metadata": {
+                      "badge": "-100k",
+                      "kind": "tiniapp"
+                  },
+                  "name": "TASTY Kitchen",
+                  "total_unique_user": 8527,
+                  "total_used": 1201
+              },
+              {
+                  "description": "",
+                  "id": "urn:directory:app:158972777804595223",
+                  "identifier": "vn.tiki.tini.tefal",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/24/9a/05/de085289dba43a59b3127e57556a7da7.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Tefal Club",
+                  "total_unique_user": 779,
+                  "total_used": 493
+              }
+          ]
+      },
+      "Bảo hiểm": {
+          "apps": [
+              {
+                  "description": "Chúng tôi là công ty công nghệ bảo hiểm \"Bình dân hoá\" bảo hiểm và mang bảo hiểm tới toàn bộ người Việt Nam.",
+                  "id": "urn:directory:app:117785581584384030",
+                  "identifier": "vn.tiki.miniapp.ezin",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/f0/a8/bb/54d017a2b5b08979143c242ee1296fed.jpg",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Bảo hiểm EZIN",
+                  "total_unique_user": 13045,
+                  "total_used": 2604
+              },
+              {
+                  "description": "Bảo vệ toàn diện chỉ từ 20K/năm. Mua ngay!",
+                  "id": "urn:directory:app:137429967880323088",
+                  "identifier": "137429967880323088",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/67/48/58/ce76baf1e87e944db14c471e2248baf2.png",
+                  "metadata": {
+                      "badge": "MỚI",
+                      "deep_link": "tikivn://insurance-tech?utm_source=tini_app",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Bảo hiểm Tiki360",
+                  "total_unique_user": 0,
+                  "total_used": 1071
+              },
+              {
+                  "description": "Chỉ từ 1K, an toàn mọi nẻo đường. Bảo vệ ngay!",
+                  "id": "urn:directory:app:115738259811729421",
+                  "identifier": "115738259811729421",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/90/4c/19/621f126027ded8c03edf1c21edd4485f.png",
+                  "metadata": {
+                      "badge": "",
+                      "deep_link": "tikivn://insurance-tech/pdp?id=76",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Bảo hiểm xe máy",
+                  "total_unique_user": 0,
+                  "total_used": 963
+              },
+              {
+                  "description": "Các sản phẩm bảo hiểm của công ty OPES",
+                  "id": "urn:directory:app:171173458049302549",
+                  "identifier": "vn.opes.tiniapp",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/d3/15/08/3969ddabfcfe23a47cec3d8e20091eba.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Bảo hiểm số OPES",
+                  "total_unique_user": 1030,
+                  "total_used": 515
+              },
+              {
+                  "description": "Mua ngay bảo hiểm du lịch Liberty trên Tiki",
+                  "id": "urn:directory:app:83305465970163718",
+                  "identifier": "83305465970163718",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/11/ba/1c/11e3ac5668f20692e69058435c8deb58.png",
+                  "metadata": {
+                      "badge": "",
+                      "deep_link": "tikivn://webview?url=https://tiki.vn/liberty?src=top_app_icon",
+                      "kind": "tikiapp"
+                  },
+                  "name": "BH du lịch Liberty",
+                  "total_unique_user": 0,
+                  "total_used": 378
+              },
+              {
+                  "description": "Bảo vệ tức thì, chỉ từ 65k. Khám phá ngay!",
+                  "id": "urn:directory:app:164554316412092433",
+                  "identifier": "164554316412092433",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/bc/a4/d8/12934334b208329e67dfdb1625543e0d.png",
+                  "metadata": {
+                      "badge": "MỚI",
+                      "deep_link": "tikivn://insurance-tech/pdp?id=62",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Bảo hiểm ô tô",
+                  "total_unique_user": 0,
+                  "total_used": 245
+              }
+          ]
+      },
+      "Dịch vụ cuộc sống": {
+          "apps": [
+              {
+                  "description": "Xinh Tươi Online là Sàn TMĐT chuyên về hoa và quà tặng cao cấp tại thị trường Việt Nam với hơn 2,500 nhà bán trên cả nước với 8 dòng sản phẩm chính như: Hoa, Bánh kem, Cây xanh, Sô-cô-la, Quà tặng sức khỏe, Quà tặng trang trí, Mỹ phẩm, và các dòng quà tặng khác. ",
+                  "id": "urn:directory:app:91705303682252822",
+                  "identifier": "xinhtuoi.online",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/67/66/96/1f96a9df1cf922aa732a31afa3095565.png",
+                  "metadata": {
+                      "badge": "-15%",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Xinh Tươi Online",
+                  "total_unique_user": 30852,
+                  "total_used": 4293
+              },
+              {
+                  "description": "Một ứng dụng không thể thiếu cho các chàng trai đến cắt tóc tại 30Shine!\nỨng dụng 30Shine với chức năng:\n+ Đặt lịch trước, không phải chờ đợi khi đến cắt\nCài ứng dụng để 30Shine chăm sóc mái tóc cho chàng trai trọn đời nhé!",
+                  "id": "urn:directory:app:148491483295514628",
+                  "identifier": "com.thirtyshine.customercare",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/a1/b5/20/01d39840ef69518972979fa234e5f6d6.jpg",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "30Shine",
+                  "total_unique_user": 2324,
+                  "total_used": 1405
+              },
+              {
+                  "description": "",
+                  "id": "urn:directory:app:158683212200083470",
+                  "identifier": "com.lanterns.btaskee.tini",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/07/6a/23/0359c58fdee3b208f774f4bb19b2b887.png",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "bTaskee - Dọn Dẹp Nhà",
+                  "total_unique_user": 3609,
+                  "total_used": 1115
+              },
+              {
+                  "description": "Ve sinh giay",
+                  "id": "urn:directory:app:154865101063585819",
+                  "identifier": "app.extrim",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/8a/7e/b2/98c1123bbd3f554cde2deed36d72560d.jpg",
+                  "metadata": {
+                      "badge": "",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Extrim - Chăm sóc vệ sinh giày",
+                  "total_unique_user": 492,
+                  "total_used": 549
+              }
+          ]
+      },
+      "Y tế": {
+          "apps": [
+              {
+                  "description": "Tư vấn, giao dược phẩm trong 20 phút, phục vụ 24H",
+                  "id": "urn:directory:app:127921481869950982",
+                  "identifier": "com.medigo.miniapp.user",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/44/b3/d9/b6a9e3f278c459eedeb283276e380584.png",
+                  "metadata": {
+                      "badge": "FREESHIP",
+                      "kind": "tiniapp"
+                  },
+                  "name": "Đặt Thuốc Medigo",
+                  "total_unique_user": 19484,
+                  "total_used": 2971
+              }
+          ]
+      },
+      "Du lịch": {
+          "apps": [
+              {
+                  "description": "Đặt vé máy bay giá rẻ hơn tại Tiki",
+                  "id": "urn:directory:app:83305789384556559",
+                  "identifier": "83305789384556559",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/66/17/50/22402e7d46e3cb8a083d5244a19abdd7.png",
+                  "metadata": {
+                      "badge": "ƯU ĐÃI",
+                      "deep_link": "tikivn://webview?url=https%3A%2F%2Ftiki.vn%2Fdat-ve-may-bay",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Vé máy bay",
+                  "total_unique_user": 0,
+                  "total_used": 4502
+              },
+              {
+                  "description": "Đặt vé xe khách tiện lợi trên Tiki",
+                  "id": "urn:directory:app:83305877381054480",
+                  "identifier": "83305877381054480",
+                  "image_url": "https://salt.tikicdn.com/ts/miniapp/9c/0c/34/1b29336421a4be64289c600814dd0206.png",
+                  "metadata": {
+                      "badge": "GIẢM 8%",
+                      "deep_link": "tikivn://webview?url=https://tiki.vn/san-pham-so/ve-xe-khach?src=top_app_icon",
+                      "kind": "tikiapp"
+                  },
+                  "name": "Vé xe khách",
+                  "total_unique_user": 0,
+                  "total_used": 1549
+              }
+          ]
+      }
+  }
+}

@@ -1,3 +1,11 @@
 <view class="main-container">
-  <view class="homepage-apps"></view>
+  
+  <view class="header-container">
+    <search-bar class="search-bar" placeholder="Tìm kiếm" shape="pill"></search-bar>
+  </view>
+  <view class="body-container">
+    <popular-apps></popular-apps>
+  </view>
+
+  <view class="footer-container"></view>
 </view>

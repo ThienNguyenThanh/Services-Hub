@@ -2,21 +2,19 @@
 
 Component({
 	data: {
-    categoryList: ['Phổ biến', 'Lịch sử', 'Yêu thích', 'text'],
+    categoryList: ['Phổ biến'],
+
     category: '',
-    apps: {
-      url: '',
-    },
     action: 'Xem thêm',
     onTapActionButton: () => {},
     navigateTo: () => {},
   },
+  
   methods: {
     didMount() {
-      this.setData({
-        category: this.data.categoryList.pop(),
-        action: this.data.action,
-      })
+     this.setData({
+       category: this.data.categoryList.shift()
+     })
     },
     _onTapActionButton() {
       if (this.data.category == 'Phổ biến') {

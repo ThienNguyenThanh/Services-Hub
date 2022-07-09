@@ -3,36 +3,32 @@
   "usingComponents": {
     "apps-results": "../apps-results/index"
   },
-    "payment": {
-        "electricity": {
-                        "description": "Thanh toán hoá đơn điện",
-                        "id": "urn:directory:app:83304571677442071",
-                        "identifier": "83304571677442071",
-                        "image_url": "https://salt.tikicdn.com/ts/miniapp/7c/d3/5d/d6d81bde2b8da3d4d7d691539884b19a.png",
-                        "metadata": {
-                            "badge": "",
-                            "deep_link": "tikivn://billpay/1",
-                            "kind": "tikiapp"
-                        },
-                            "name": "Điện",
-                            "total_unique_user": 0,
-                            "total_used": 32158
-                        }
-                ,
-        "water": {
-                    "description": "Thanh toán hoá đơn nước",
-                    "id": "urn:directory:app:83301987348643851",
-                    "identifier": "83301987348643851",
-                    "image_url": "https://salt.tikicdn.com/ts/miniapp/63/5f/ca/28a5f795f32641010c78c7f77ab1496e.png",
-                    "metadata": {
-                        "badge": "",
-                        "deep_link": "tikivn://billpay/2",
-                        "kind": "tikiapp"
-                    },
-                    "name": "Nước",
-                    "total_unique_user": 0,
-                    "total_used": 9092
-                }
-              }
- 
+
+  "data": [{
+    "categoryName": "Di chuyen",
+    "miniApps": [
+      {
+        "title": "Futa",
+        "description": "Xe"
+      }, 
+      {
+        "title": "Honda",
+        "description": "Xe"
+      }
+    ] 
+  },
+  {
+    "categoryName": "An uong",
+    "miniApps": [
+      {
+        "title": "Agoda",
+        "description": "An"
+      }, 
+      {
+        "title": "King",
+        "description": "An"
+      }
+    ] 
+  }
+  ]  
 }

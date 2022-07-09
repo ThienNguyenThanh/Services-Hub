@@ -1,0 +1,23 @@
+<view class="main-container">
+  
+  <view class="header-container">
+    <text class="title">Title here</text>
+  </view>
+
+  <view class="body-container">
+    <view class="homepage-apps">
+      <view tiki:for={{[1,2,3,4,5,6,7]}} class="category-body">
+        <app-result></app-result>
+        
+      </view>
+      <view class="see-more-footer">
+        <text>{{seeMore}}</text>
+      </view>
+    </view>
+    
+  </view>
+
+  <view class="footer-container">
+
+  </view>
+</view>

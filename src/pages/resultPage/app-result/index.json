@@ -4,7 +4,7 @@
     "apps-results": "../apps-results/index"
   },
   "data": [{
-    "category": "Di chuyen",
+    "categoryName": "Di chuyen",
     "miniApps": [
       {
         "title": "Futa",
@@ -17,7 +17,7 @@
     ] 
   },
   {
-    "category": "An uong",
+    "categoryName": "An uong",
     "miniApps": [
       {
         "title": "Agoda",

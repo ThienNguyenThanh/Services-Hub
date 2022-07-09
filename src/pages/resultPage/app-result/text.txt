@@ -1,0 +1,27 @@
+// "data": [{
+  //   "categoryName": "Di chuyen",
+  //   "miniApps": [
+  //     {
+  //       "title": "Futa",
+  //       "description": "Xe"
+  //     }, 
+  //     {
+  //       "title": "Honda",
+  //       "description": "Xe"
+  //     }
+  //   ] 
+  // },
+  // {
+  //   "categoryName": "An uong",
+  //   "miniApps": [
+  //     {
+  //       "title": "Agoda",
+  //       "description": "An"
+  //     }, 
+  //     {
+  //       "title": "King",
+  //       "description": "An"
+  //     }
+  //   ] 
+  // }
+  // ]

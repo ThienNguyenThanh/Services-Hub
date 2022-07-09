@@ -5,8 +5,7 @@ Page({
     
   },
 	onLoad() {
-    this.setData({
-    })
+  
 	},
 	onReady() {
 	},

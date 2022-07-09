@@ -2,20 +2,45 @@ import file from "./index.json";
 
 Component({
   data: {
-    list: ["text", "text"],
+    list: [],
+    category: 'Thanh toan',
+    onTapButtonAction: () => {}
   },
+  methods: {
   didMount() {
-    let values = Object.values(file.data);
-    let data = new Array();
-    values.forEach((category) => {
-      data.push({
-        categoryName: category.categoryName,
-        miniApps: category.miniApps,
+      let values = Object.values(file.payment);
+      let data = new Array();
+      values.forEach((app) => {
+        console.log(app)
+        data.push({
+          description: app.description,
+          icon: app.image_url,
+          title: app.name,
+          deepLink: app.metadata.deep_link
+        });
+        this.data["id"] =  app.id
       });
-    });
-    console.log(data);
-    this.setData({
-      list: data,
-    });
-  },
+      
+      this.setData({
+        list: data,
+        category: this.data.category
+      });
+    },
+    _onTapButtonAction() {
+      my.navigateToMiniApp({
+        appId: this.data.list.id,
+        path: this.data.list.deepLink,
+        extraData: {
+          from: 'MiniApp Demo'
+        },
+        success: (res) => {
+          console.log(res)
+        },
+        fail: (e) => {
+          console.log(e)
+        }
+      })
+      console.log(this.data.list)
+    },
+  }
 });

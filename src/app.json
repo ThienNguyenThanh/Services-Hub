@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/apps-pages/popular-page/index",
     "pages/resultPage/index",
+    "pages/apps-pages/popular-page/index",
     "pages/Homepage/index",
     "pages/apps-pages/favorite-pages/index",
     "pages/apps-pages/history-pages/index",

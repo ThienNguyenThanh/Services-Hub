@@ -1,6 +1,6 @@
 {
   "name": "ServHub",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "tiki": {
     "appIdentifier": "vn.tiki.miniapp.servhubtini",
     "buildNumber": 1

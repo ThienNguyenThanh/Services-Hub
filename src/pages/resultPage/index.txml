@@ -5,10 +5,8 @@
   </view>
 
   <view class="body-container">
-
     <app-result></app-result>
   </view>
-
   <view class="footer-container">
 
   </view>

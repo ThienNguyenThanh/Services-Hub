@@ -2,8 +2,7 @@
 
 Component({
 	data: {
-    categoryList: ['Phổ biến'],
-
+    categoryList: ['Phổ biến', 'Yêu thích'],
     category: '',
     action: 'Xem thêm',
     onTapActionButton: () => {},
@@ -13,7 +12,7 @@ Component({
   methods: {
     didMount() {
      this.setData({
-       category: this.data.categoryList.shift()
+       category: this.data.categoryList.pop()
      })
     },
     _onTapActionButton() {
